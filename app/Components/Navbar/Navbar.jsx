@@ -13,7 +13,7 @@ export default function Navbar() {
             height={70}
             className="inline-block"
           />
-          <h1 className="text-[#474747] text-3xl font-bold space-x-3">
+          <h1 className="text-[#474747] text-xl md:text-3xl font-bold space-x-3">
             Bistro Bliss
           </h1>
         </div>

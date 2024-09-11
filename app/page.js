@@ -1,5 +1,10 @@
-import Image from "next/image";
-
+import Hero from "./Components/Header/Header";
+import Menu from "./Components/Menu";
 export default function Home() {
-  return <div></div>;
+  return (
+    <>
+      <Hero />
+      <Menu />
+    </>
+  );
 }
