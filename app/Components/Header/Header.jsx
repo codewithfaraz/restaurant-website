@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="bg-hero-image h-[80vh] bg-cover bg-center flex justify-center items-center flex-col space-y-3">
-      <h1 className="text-[#2C2F24] text-6xl  w-[450px] md:w-[480px] text-center leading-tight uppercase font-semibold">
+      <h1 className="text-[#2C2F24] text-6xl  w-[400px] md:w-[480px] text-center leading-tight uppercase font-semibold">
         Best food for your taste
       </h1>
       <p className="text-[#2C2F24] text-xl md:w-[500px] text-center w-[400px]">

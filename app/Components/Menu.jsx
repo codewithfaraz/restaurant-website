@@ -3,7 +3,7 @@ export default function Menu() {
   return (
     <div className="py-32 ">
       <div className="max-w-6xl mx-auto flex items-center justify-center flex-col space-y-12">
-        <h1 className="text-6xl text-[#2C2F24]">Browse Our Menu</h1>
+        <h1 className="text-6xl text-[#2C2F24] text-center">Browse Our Menu</h1>
         <div className="flex md:space-x-3 space-y-3 md:space-y-0 md:flex-row flex-col">
           <div className="hover:-translate-y-2 transition flex flex-col items-center justify-center border border-[#DBDFD0] py-16 px-12 md:px-2 space-y-3">
             <Image src="/Images/breakfast-icon.png" width={60} height={60} />
