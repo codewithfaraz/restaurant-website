@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 export default function Navbar() {
   const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -21,15 +22,16 @@ export default function Navbar() {
         <div className="hidden md:block">
           <nav>
             <ul className="space-x-3">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="text-[#2C2F24] bg-[#DBDFD0] rounded-3xl px-2 py-1 font-bold"
               >
                 Home
-              </a>
-              <a href="#" className="text[#2C2F24]">
+              </Link>
+
+              <Link href="/about" className="text[#2C2F24]">
                 About
-              </a>
+              </Link>
               <a href="#" className="text-[#2C2F24]">
                 Menu
               </a>

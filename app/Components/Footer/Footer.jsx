@@ -45,12 +45,12 @@ export default function Footer() {
         <div className="">
           <h1 className="text-white font-bold">Pages</h1>
           <ul className="flex flex-col space-y-4 mt-6">
-            <a href="" className="text-[#DBDFD0]">
+            <Link href="/" className="text-[#DBDFD0]">
               Home
-            </a>
-            <a href="" className="text-[#DBDFD0]">
+            </Link>
+            <Link href="/about" className="text-[#DBDFD0]">
               About
-            </a>
+            </Link>
             <a href="" className="text-[#DBDFD0]">
               Menu
             </a>
