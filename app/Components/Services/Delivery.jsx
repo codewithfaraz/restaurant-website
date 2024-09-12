@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Delivery() {
   return (
-    <div className="md:py-32 py-16">
+    <div className="md:py-32 py-16 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row px-6 md:px-0">
         <div className="grid grid-cols-2 grid-rows-2 gap-3">
           <Image
