@@ -27,7 +27,9 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`text-[#2C2F24] ${
-                  path === "/" ? "bg-[#DBDFD0] font-bold" : ""
+                  path === "/" || path === "/book-table"
+                    ? "bg-[#DBDFD0] font-bold"
+                    : ""
                 } rounded-3xl px-2 py-1 `}
               >
                 Home
@@ -59,9 +61,12 @@ export default function Navbar() {
           </nav>
         </div>
         <div className="hidden md:block">
-          <button className="text-[#182226] px-4 py-2 rounded-full border-2 border-black">
+          <Link
+            href="/book-table"
+            className="text-[#182226] px-4 py-2 rounded-full border-2 border-black"
+          >
             Book A Table
-          </button>
+          </Link>
         </div>
         {/* mobile menu button*/}
         <div className="md:hidden block">
