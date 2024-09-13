@@ -51,9 +51,9 @@ export default function Footer() {
             <Link href="/about" className="text-[#DBDFD0]">
               About
             </Link>
-            <a href="" className="text-[#DBDFD0]">
+            <Link href="/menu" className="text-[#DBDFD0]">
               Menu
-            </a>
+            </Link>
             <a href="" className="text-[#DBDFD0]">
               Pricing
             </a>

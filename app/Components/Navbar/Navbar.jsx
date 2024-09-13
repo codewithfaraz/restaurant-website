@@ -1,8 +1,10 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 export default function Navbar() {
+  const path = usePathname();
   const [mobileMenuState, setMobileMenuState] = useState(false);
   return (
     <div className="py-4">
@@ -24,17 +26,29 @@ export default function Navbar() {
             <ul className="space-x-3">
               <Link
                 href="/"
-                className="text-[#2C2F24] bg-[#DBDFD0] rounded-3xl px-2 py-1 font-bold"
+                className={`text-[#2C2F24] ${
+                  path === "/" ? "bg-[#DBDFD0] font-bold" : ""
+                } rounded-3xl px-2 py-1 `}
               >
                 Home
               </Link>
 
-              <Link href="/about" className="text[#2C2F24]">
+              <Link
+                href="/about"
+                className={`text-[#2C2F24] ${
+                  path === "/about" ? "bg-[#DBDFD0] font-bold" : ""
+                } rounded-3xl px-2 py-1 `}
+              >
                 About
               </Link>
-              <a href="#" className="text-[#2C2F24]">
+              <Link
+                href="/menu"
+                className={`text-[#2C2F24] ${
+                  path === "/menu" ? "bg-[#DBDFD0] font-bold" : ""
+                } rounded-3xl px-2 py-1 `}
+              >
                 Menu
-              </a>
+              </Link>
               <a href="#" className="text-[#2C2F24]">
                 Pages
               </a>
