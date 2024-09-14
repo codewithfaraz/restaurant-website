@@ -51,12 +51,22 @@ export default function Navbar() {
               >
                 Menu
               </Link>
-              <a href="#" className="text-[#2C2F24]">
+              <Link
+                href="/blog"
+                className={`text-[#2C2F24] ${
+                  path === "/blog" ? "bg-[#DBDFD0] font-bold" : ""
+                } rounded-3xl px-2 py-1 `}
+              >
                 Pages
-              </a>
-              <a href="#" className="text-[#2C2F24]">
+              </Link>
+              <Link
+                href="/contact"
+                className={`text-[#2C2F24] ${
+                  path === "/contact" ? "bg-[#DBDFD0] font-bold" : ""
+                } rounded-3xl px-2 py-1 `}
+              >
                 Contact
-              </a>
+              </Link>
             </ul>
           </nav>
         </div>
@@ -87,24 +97,27 @@ export default function Navbar() {
               |||
             </p>
             <ul className="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center space-y-4">
-              <a href="" className="font-bold border-b-2 border-white">
+              <Link href="/" className="font-bold border-b-2 border-white">
                 Home
-              </a>
-              <a href="" className="">
+              </Link>
+              <Link href="/about" className="">
                 About
-              </a>
-              <a href="" className="">
+              </Link>
+              <Link href="/menu" className="">
                 Menu
-              </a>
-              <a href="" className="">
+              </Link>
+              <Link href="/blog" className="">
                 Pages
-              </a>
-              <a href="" className="">
+              </Link>
+              <Link href="/contact" className="">
                 Contact
-              </a>
-              <button className=" px-4 py-2 rounded-full border-2 border-white">
+              </Link>
+              <Link
+                href="/book-table"
+                className=" px-4 py-2 rounded-full border-2 border-white"
+              >
                 Book A Table
-              </button>
+              </Link>
             </ul>
           </div>
         )}

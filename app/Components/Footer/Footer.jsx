@@ -57,12 +57,12 @@ export default function Footer() {
             <a href="" className="text-[#DBDFD0]">
               Pricing
             </a>
-            <a href="" className="text-[#DBDFD0]">
+            <Link href="/blog" className="text-[#DBDFD0]">
               Blog
-            </a>
-            <a href="" className="text-[#DBDFD0]">
+            </Link>
+            <Link href="/contact" className="text-[#DBDFD0]">
               Contact
-            </a>
+            </Link>
             <a href="" className="text-[#DBDFD0]">
               Delivery
             </a>
